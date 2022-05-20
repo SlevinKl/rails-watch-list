@@ -1,0 +1,19 @@
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.seekpng.com/png/detail/13-136765_scary-movie-logo-horror-movie-logo-png.png">
+  Save Any Kind of Movie
+</div>
+
+
+<div class="container p-3">
+  <div class="d-flex justify-content-between p-3">
+    <h1>My Lists</h1>
+    <%= link_to "Create a movie list", new_list_path, class: "btn btn-primary h-100 align-self-center"%>
+  </div>
+
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <%= link_to list.name, list_path(list), class: "text-white text-decoration-none"%>
+      </div>
+    <% end %>
+  </div>
+</div>

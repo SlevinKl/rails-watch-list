@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <h1>New List</h1>
+      <%= simple_form_for([@list, @bookmark]) do |f| %>
+        <%= f.input :comment ,  placeholder: 'Comment'%>
+        <%= f.association :movie %>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
