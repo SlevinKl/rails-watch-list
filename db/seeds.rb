@@ -29,6 +29,4 @@ movie.each do |m|
 end
 puts 'Finished!'
 
-
-
 # Movie.create(title: Faker::Movie.title, overview: Faker::Lorem.paragraph, poster_url: Faker::Internet.domain_name, rating: Faker::Number.between(from: 1, to: 10))
